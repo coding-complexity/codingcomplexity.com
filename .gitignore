@@ -1,0 +1,4 @@
+/.venv
+/pipfile.lock
+/.env
+/Pipfile.lock
