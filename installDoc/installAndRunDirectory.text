@@ -1,9 +1,10 @@
 1. git clone
 2. install pipenv
 3. check python version
-4. shoud be 3.5, 3.6, 3.7
-5. update python version in pipenv as your system
-6.run command in cmd:- pipenv install
+4. version shoud be 3.5, 3.6, 3.7
+5. if needed, update python version in pipenv file as your system
+6. run command in cmd:- pipenv install
+7. If needed create .env file and put env data in the file
 7. for ubantu/mac use:- export FLASK_ENV=development , for window: set FLASK_ENV=development
 8. run command:- pipenv run flask run
 9. Now open 127.0.0.1:5000 in your browser tab
