@@ -1,0 +1,31 @@
+body{
+     font-size: 16px;
+     line-height: 1.5;
+}
+
+.pageContainer{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin-bottom: 30px;
+     color: inherit;
+     background-color: #ffffff;
+}
+
+.sketch-container.jumbotron, .tile-sketch.jumbotron{
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.product-tile {
+    border: 1px solid #b7b6b6;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.price-section, .buy-section {
+    width: 50%;
+    float: left;
+}
+.tile-price-body {
+    margin: 10px 0px;
+}
