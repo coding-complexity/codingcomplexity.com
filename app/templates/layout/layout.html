@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }}</title>
+</head>
+<body>
+<!-- Header Section -->
+{% include "element/header.html" %}
+{% block header %}
+{% endblock %}
+<!-- Header Section -->
+{% block content %}
+{% endblock %}
+<!-- Footer Section -->
+{% include "element/footer.html" %}
+{% block footer %}
+{% endblock %}
+<!--Footer Section!-->
+</body>
+</html>
