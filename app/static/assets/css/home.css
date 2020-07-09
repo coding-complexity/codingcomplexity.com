@@ -19,7 +19,7 @@ body{
 .product-tile {
     border: 1px solid #b7b6b6;
     width: 100%;
-    padding: 12px;
+    padding: 2px 12px;
     margin-bottom: 20px;
 }
 .price-section, .buy-section {
@@ -28,4 +28,13 @@ body{
 }
 .tile-price-body {
     margin: 10px 0px;
+}
+img.tile-header-img {
+    width: 100%;
+}
+.tile-header {
+    margin: 10px 0px;
+}
+.product-benefit-header {
+    margin: 15px 0px;
 }
