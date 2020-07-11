@@ -16,13 +16,20 @@ body{
     margin-top: 20px;
 }
 
+.product-section-box.row, .product-benefit-box.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mb-10 {
+    margin-bottom: 20px;
+}
 .product-tile {
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
     border: 1px solid #b7b6b6;
     width: 100%;
     padding: 2px 12px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    height: 100%;
 }
 .product-tile:hover{
      box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
@@ -30,10 +37,13 @@ body{
 }
 .price-section, .buy-section {
     width: 50%;
-    float: left;
+    /*float: left; */
+    font-size: 18px;
 }
 .tile-price-body {
     margin: 10px 0px;
+    display: flex;
+    align-items: center;
 }
 img.tile-header-img {
     width: 100%;
@@ -43,6 +53,9 @@ img.tile-header-img {
 }
 .product-benefit-header {
     margin: 15px 0px;
+}
+p.productSortDescription {
+    font-size: 14px;
 }
 
 

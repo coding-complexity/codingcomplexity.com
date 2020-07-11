@@ -3,10 +3,11 @@ from app.config import Config
 
 class Home:
     def __init__(self):
-        # self.config = Config()
-        print('Home page running....')
+        self.config = Config()
+
 
     def index(self):
         homePageData = {}
-        homePageData['msg'] = 'Hello World'
+        homePageData['productData'] = self.config.productData()
+        # print(homePageData)
         return homePageData
