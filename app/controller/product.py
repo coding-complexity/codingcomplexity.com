@@ -3,10 +3,12 @@ from app.config import Config
 
 class Product:
     def __init__(self):
-        # self.config = Config()
-        print('Home page running....')
+        self.conf = Config()
 
-    def index(self):
+    def index(self, productId):
         productDetails = {}
-        productDetails['msg'] = 'Hello World'
+        products = self.conf.productData()
+        for product in products:
+            if product['product_id'] == productId:
+                productDetails = product
         return productDetails

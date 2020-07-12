@@ -8,3 +8,8 @@ class Config:
         productYamlfile = '{}/products.yaml'.format(self.dataBasePath)
         productsData = yaml.load(open(productYamlfile), Loader=yaml.FullLoader)
         return productsData
+
+    def productBenefits(self):
+        benefitsYamlfile = '{}/benefits.yaml'.format(self.dataBasePath)
+        benefitsData = yaml.load(open(benefitsYamlfile), Loader=yaml.FullLoader)
+        return benefitsData
