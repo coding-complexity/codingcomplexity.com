@@ -13,7 +13,7 @@ body{
 
 .sketch-container.jumbotron, .tile-sketch.jumbotron{
     margin-bottom: 0px;
-    margin-top: 20px;
+   /* margin-top: 20px; */
 }
 
 .product-section-box.row, .product-benefit-box.row {
@@ -50,6 +50,8 @@ img.tile-header-img {
 }
 .tile-header {
     margin: 10px 0px;
+    min-height: 78px;
+    height: auto;
 }
 .product-benefit-header {
     margin: 15px 0px;
