@@ -1,0 +1,30 @@
+# BENEFITS DATA
+- benefit_id: 1
+  benefit: 'Flexibility'
+  sort_des: "they will delegate their time towards their different projects"
+  description: "Students have the freedom to juggle their careers and school because they aren't tied down to a fixed schedule. In a traditional classroom setting, class meeting times are set, and the student has no power over this, forcing them to work their schedules around these dates. Most people who choose online learning tend to have other commitments, and prefer this mode of learning as it gives them power over how they will delegate their time towards their different projects."
+  image_name: "benefits1.jpg"
+
+- benefit_id: 2
+  benefit: 'Reduced Costs'
+  sort_des: "Online education can cost less due to a variety of reasons."
+  description: "Online education can cost less due to a variety of reasons. For example, there is no cost for commuting. Assorted costs that are related to transport, such as fuel, parking, car maintenance, and public transportation costs don't affect the online student."
+  image_name: "benefits2.jpg"
+
+- benefit_id: 3
+  benefit: "Networking Opportunities"
+  sort_des: "Online education also provides students with the chance to network"
+  description: "Online education also provides students with the chance to network with peers across nations or even different continents. This often leads to other opportunities in terms of collaboration with other individuals in the implementation of a project. At the same time, it makes them culturally sensitive and able to fit into other environments easily given their exposure to other cultures."
+  image_name: "benefits3.png"
+
+- benefit_id: 4
+  benefit: "Documentation"
+  sort_des: "All the information that you will need will be safely stored in an online database."
+  description: "All the information that you will need will be safely stored in an online database. This includes things like live discussion documents, training materials and emails. This means that if there's ever anything that needs to be clarified, the student will be able to access these documents fast, saving valuable time. This is especially useful for individuals that need to carry out research for a project and submit their findings to a panel."
+  image_name: "benefits4.jpg"
+
+- benefit_id: 5
+  benefit: "Increased Instructor - Student Time"
+  sort_des: "Students in traditional classrooms may not get the personalized attention"
+  description: "Students in traditional classrooms may not get the personalized attention they need to have concepts clarified. Although class sizes are small at CCA, most colleges have classes of students that number in the hundreds. This is not a problem for this type of education because online guided discussions and personal talk time with their professors and lecturers is a hallmark of online classes. This increases the chances of a student performing well due to the time their instructors give them."
+  image_name: "benefits5.jpeg"

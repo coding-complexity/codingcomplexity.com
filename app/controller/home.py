@@ -9,5 +9,6 @@ class Home:
     def index(self):
         homePageData = {}
         homePageData['productData'] = self.config.productData()
+        homePageData['productBenefits'] = self.config.productBenefits()
         # print(homePageData)
         return homePageData

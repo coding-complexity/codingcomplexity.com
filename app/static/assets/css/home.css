@@ -57,6 +57,9 @@ img.tile-header-img {
 p.productSortDescription {
     font-size: 14px;
 }
+img.tile-header-img {
+    height: 200px;
+}
 
 
 
