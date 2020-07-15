@@ -7,12 +7,14 @@ from app.controller.product import Product
 @app.route('/')
 @app.route('/index')
 def index():
+    pageSlug = 'Home'
     home = Home()
     homeData = home.index()
-    return render_template('home/index.html', title='Coding Complexity - Home Page', homeData=homeData)
+    return render_template('home/index.html', title='Coding Complexity - Home Page', homeData=homeData, pageSlug=pageSlug)
 
 @app.route('/product/<int:productId>')
 def product(productId):
+    pageSlug = 'Products'
     product = Product()
     productDetails = product.index(productId)
-    return render_template('product/product.html', title='Coding Complexity - Product Details', productDetails=productDetails)
+    return render_template('product/product.html', title='Coding Complexity - Product Details', productDetails=productDetails, pageSlug=pageSlug)
