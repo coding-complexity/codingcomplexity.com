@@ -13,15 +13,12 @@
 				  <a class="navbar-brand" href="/"><img class='header-logo' src='{{ url_for('static',filename='assets/images/coding-complexity-full-logo.svg')}}' /></a>
 			 </div>
 			 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				  <!-- <ul class="nav navbar-nav">
-
-				  </ul> -->
 				  <ul class="nav navbar-nav navbar-right">
-                           <li class="active"><a href="/">home</a></li>
-                           <li><a href="#">About Us</a></li>
-                           {% if pageSlug == 'Home' %}
-                           <li><a href="#productSection">Products</a></li>
-                           <li><a href="#productBenefits">Benefits</a></li>
+                           <li {%- if request.path == "/" %} class="headerLinks active homepageLink" {% else %} class="headerLinks" {% endif%} ><a href="/">home</a></li>
+                           <li class="headerLinks"><a href="#">About Us</a></li>
+                           {%- if request.path == "/" %}
+                           <li class="headerLinks" id="productLink" ><a href="#productSection">Products</a></li>
+                           <li class="headerLinks" id="benefitLink" ><a href="#productBenefits" >Benefits</a></li>
                            {%endif%}
 				  </ul>
 			 </div>
