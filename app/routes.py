@@ -5,16 +5,13 @@ from app.controller.home import Home
 from app.controller.product import Product
 
 @app.route('/')
-@app.route('/index')
 def index():
-    pageSlug = 'Home'
     home = Home()
     homeData = home.index()
-    return render_template('home/index.html', title='Coding Complexity - Home Page', homeData=homeData, pageSlug=pageSlug)
+    return render_template('home/index.html', title='Coding Complexity LLC - Home Page', homeData=homeData)
 
-@app.route('/product/<int:productId>')
-def product(productId):
-    pageSlug = 'Products'
+@app.route('/product/<productSlug>')
+def product(productSlug):
     product = Product()
-    productDetails = product.index(productId)
-    return render_template('product/product.html', title='Coding Complexity - Product Details', productDetails=productDetails, pageSlug=pageSlug)
+    productDetails = product.index(productSlug)
+    return render_template('product/product.html', title=productDetails['pageTitle'], productDetails=productDetails)

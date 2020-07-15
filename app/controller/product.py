@@ -5,10 +5,10 @@ class Product:
     def __init__(self):
         self.conf = Config()
 
-    def index(self, productId):
+    def index(self, productSlug):
         productDetails = {}
         products = self.conf.productData()
         for product in products:
-            if product['product_id'] == productId:
+            if product['pageSlug'] == productSlug:
                 productDetails = product
         return productDetails

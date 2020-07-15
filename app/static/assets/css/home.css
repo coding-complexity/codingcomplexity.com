@@ -2,11 +2,11 @@
     background-color: #bfbfbf;
     border-color: #ffffff;
 }
-/* div#topheader {
+div#topheader {
     position: fixed;
     width: 100%;
     z-index: 2;
-} */
+}
 #topheader .navbar-nav li > a {
 	text-transform: capitalize;
 	color: #1a1a1a;
@@ -93,7 +93,7 @@ img.tile-header-img {
 
 
 img.product-header-img { width: 100%; max-height: 420px; }
-.sketch-container.text-center { width: 100%; max-height: 420px; box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2); margin-top: 15px; }
+.sketch-container.text-center { width: 100%; max-height: 420px; box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2); margin-top: 68px; }
 .sort-description{ font-size:14px; }
 .priceTag {
     font-size: 24px;
