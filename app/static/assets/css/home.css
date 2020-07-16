@@ -1,3 +1,8 @@
+canvas#scene {
+    background-color: #1a1a1a;
+    padding: 0px;
+}
+
 .navbar-default {
     background-color: #bfbfbf;
     border-color: #ffffff;
@@ -117,6 +122,11 @@ img.product-header-img { width: 100%; max-height: 420px; }
      }
 }
 
+@media( max-width: 480px){
+     .sketch-container.text-center {
+         max-height: 250px;
+     }
+}
 
 .footer-bottom {
     background-color: #bfbfbf;
@@ -140,8 +150,3 @@ img.product-header-img { width: 100%; max-height: 420px; }
 .design a {
     color: #fff;
 }
-
-
-/************************************************************
-************************Footer*****************************
-*************************************************************/
