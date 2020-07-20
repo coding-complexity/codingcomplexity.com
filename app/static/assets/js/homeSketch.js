@@ -1,89 +1,57 @@
-let particles = [];
-let distanceThresh = 80;
-let numParticles = 100;
-
-class Particle {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-    
-    let a = random()*TAU;
-    
-    this.velx = cos(a);
-    this.vely = sin(a);
-  }
+const sketch = (p) => {
+  p.x = 100;
+  p.y = 100;
+  console.log('p5 initiate');
   
-  update() {
-    this.x += this.velx;
-    this.y += this.vely;
-    
-    if (this.x < 0 || this.x > width) this.velx *= -1;
-    if (this.y < 0 || this.y > height) this.vely *= -1;
-    
-    this.x = constrain(this.x, 0, width);
-    this.y = constrain(this.y, 0, height);
-  }
-  
-  renderConnections() {
-    for (let i = 0; i < particles.length-1; i++) {
-      let p = particles[i];
-      let distance = dist(this.x, this.y, p.x, p.y);
-      
-      if (distance < distanceThresh) {
-        let amt = distance/distanceThresh;
-        stroke(amt * 0.32 + 0.3, 1, 1);
-        line(this.x, this.y, p.x, p.y);
-      }
-    }
-  }
-  
-  renderPoints() {
-    ellipse(this.x, this.y, 3, 3); 
-  }
-}
-
-function setup() {
-    let b = document.getElementById("scene");
+  p.setup = function() {
+    let b = document.getElementById('scene');
     let w = b.clientWidth;
     let h = b.clientHeight;
-    createCanvas(w, h);
-    console.log("width", w);
-    console.log("height", h);
-  colorMode(HSB, 1, 1, 1); // hue, saturation, balance
-  
-  for (let i=0; i<numParticles; i++) {
-     particles.push(
-       new Particle(
-         random(width),
-         random(height)
-     )
-    ); 
-  }
-}
+    
+    console.log("width", w, "height", h);
 
-function drawStars() {
-  stroke(0.2);
-  for (let i = 0; i < 200; i++) {
-    point(random(width), random(height));
-     
-  }
-}
+    var renderer = p.createCanvas(w, h);
+    renderer.parent('scene');
+    
+    p.x = p.width/2;
+    p.y = p.height/2;
+    p.background(255);
 
-function draw() {
-  blendMode(BLEND);
-  background(0, 0.15);
-  blendMode(ADD);
-  for (let i = 0; i < particles.length-1; i++) {
-    let p = particles[i];
-    p.update();
-    p.renderConnections();
-    // p.renderPoints();
+    console.log("p.x", p.x);
+    console.log("p.y", p.y);
+    
   }
   
-  drawStars();
+  p.draw = function() {
+    p.fill(255, 255, 0, 23);
+  //   p.noStroke();
+    p.ellipse(p.x, p.y, 68, 68);
+
+  //   p.x = p.x + p.random(-15, 15);
+  //   p.y = p.y + p.random(-15, 15);
+  }
+
+  p.mouseClicked = function() {
+
+      var newX = p.mouseX;
+      var newY = p.mouseY;
+      console.log("clicky");
+      console.log("newX", newX);
+      console.log("newY", newY);
+      
+              
+      p.ellipse(p.mouseX, p.mouseY, 100, 100);
+  }
+
+  // p.edges = function() {
+  //     if (p.x > p.width) {
+  //         p.x *= -1;
+  //     } else {
+  //         if (p.y > p.height) {
+  //             p.y *= -1;
+  //         }
+  //     }
+  // }
 }
 
-function windowResized() {
- resizeCanvas(windowWidth, windowHeight); 
-}
-  
+new p5(sketch, 'scene');
