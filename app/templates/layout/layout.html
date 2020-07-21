@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/lib/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/css/home.css')}}">
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
 </head>
 <body>
 <!-- Header Section -->
@@ -23,5 +23,9 @@
 <script src="{{ url_for('static',filename='assets/lib/js/jquery.min.js')}}"></script>
 <script src="{{ url_for('static',filename='assets/lib/js/bootstrap.min.js')}}"></script>
 <script src="{{ url_for('static',filename='assets/js/custom.js')}}"></script>
+<script src="{{ url_for('static',filename='assets/js/p5.js')}}"></script>
+{%- if request.path == "/" %}
+    <script src="{{ url_for('static',filename='assets/js/homepageSketch.js')}}"></script>
+{%endif%}
 </body>
 </html>
