@@ -23,5 +23,10 @@
 <script src="{{ url_for('static',filename='assets/lib/js/jquery.min.js')}}"></script>
 <script src="{{ url_for('static',filename='assets/lib/js/bootstrap.min.js')}}"></script>
 <script src="{{ url_for('static',filename='assets/js/custom.js')}}"></script>
+<script src="{{ url_for('static',filename='assets/js/p5.js')}}"></script>
+{%- if request.path == "/" %}
+	<!-- <script src="{{ url_for('static',filename='assets/js/homepageSketch.js')}}"></script> -->
+	<script src="{{ url_for('static',filename='assets/js/homeSketch.js')}}"></script>
+{%endif%}
 </body>
 </html>
