@@ -3,9 +3,12 @@
      <div class='container'>
           <div class='row'>
                <div class='col-xl-9 col-lg-12 col-md-12 col-sm-12'>
-                    <div class='sketch-container jumbotron text-center'>
-                         <h1>Main P5 Sketch Block</h1>
+                    <!-- <div id="scene"> -->
+                    <div class='sketch-container jumbotron text-center' id="scene" >
                     </div>
+                    <!-- </div> -->
+
+                    <input id="SketchText" type="hidden" value="Coding Complexity" />
                     <div class='pageContainer text-center'>
                          <h2>Coding Complexity</h2>
                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -13,27 +16,29 @@
                     </div>
                     <div class='product-section-box row' id="productSection">
                          {% for product in homeData.productData%}
-                         <div class='col-xl-4 col-lg-4 col-md-4 col-sm-6 text-center mb-10' >
-                              <div class='product-tile' >
-                                   <div class='tile-header'>
-                                        <h3>{{product.product_name}}</h3>
-                                   </div>
-                                   <div class='tile-sketch jumbotron'>
-                                        <h3>Product Sketch</h3>
-                                   </div>
-                                   <div class='tile-price-body'>
-                                        <div class='price-section'>
-                                             <span class='price'>${{product.product_price}}</span>
+                              {% if product.productStatus == 1 %}
+                                   <div class='col-xl-4 col-lg-4 col-md-4 col-sm-6 text-center mb-10' >
+                                        <div class='product-tile' >
+                                             <div class='tile-header'>
+                                                  <h3>{{product.product_name}}</h3>
+                                             </div>
+                                             <div class='tile-sketch' id="{{product.homePageSketchId}}" >
+
+                                             </div>
+                                             <div class='tile-price-body'>
+                                                  <div class='price-section'>
+                                                       <span class='price'>${{product.product_price}}</span>
+                                                  </div>
+                                                  <div class='buy-section'>
+                                                       <a href="/product/{{product.pageSlug}}" target='_blank' class='btn btn-primary btn-s'>More Info</a>
+                                                  </div>
+                                             </div>
+                                             <div class='tile-details'>
+                                                  <p class='productSortDescription'>{{product.product_sort_desc}}</p>
+                                             </div>
                                         </div>
-                                        <div class='buy-section'>
-                                             <a href="/product/{{product.pageSlug}}" target='_blank' class='btn btn-primary btn-s'>More Info</a>
-                                        </div>
                                    </div>
-                                   <div class='tile-details'>
-                                        <p class='productSortDescription'>{{product.product_sort_desc}}</p>
-                                   </div>
-                              </div>
-                         </div>
+                              {% endif %}
                          {%endfor%}
                     </div>
                </div>
@@ -61,4 +66,5 @@
 
           </div>
      </div>
+     <!-- <script src="{{ url_for('static',filename='assets/js/homepageSketch.js')}}"></script> -->
 {% endblock %}
