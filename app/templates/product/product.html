@@ -3,8 +3,7 @@
      <div class='container'>
           <div class='row'>
                <div class='col-xl-9 col-lg-12 col-md-12 col-sm-12'>
-                    <div class='sketch-container text-center'>
-                         <img class='product-header-img' src='{{ url_for('static',filename='assets/images/product.jpg')}}' />
+                    <div class='sketch-container jumbotron text-center' id="scene" >
                     </div>
                     <div class='col-xl-4 col-log-6 col-log-6 col-sm-9 product-details text-center' >
                          <div class='product-name' >
@@ -34,4 +33,5 @@
                </div>
           </div>
      </div>
+     <script src="{{ url_for('static',filename='assets/js/')}}{{productDetails.sketchFileName}}"></script>
 {% endblock %}

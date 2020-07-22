@@ -1,10 +1,16 @@
-const sketch = (p) => {
+if(document.getElementById('homePageSketch4')){
+     sketchId4 = 'homePageSketch4'
+}else{
+     sketchId4 = 'scene'
+}
+
+const sketch4 = (p) => {
   p.x = 100;
   p.y = 100;
   console.log('p5 initiate');
 
   p.setup = function() {
-    var b = document.getElementById('scene');
+    var b = document.getElementById(sketchId4);
 
     if (window.screen.height <= 550) {
       var _height = 250;
@@ -17,9 +23,9 @@ const sketch = (p) => {
 
     // console.log("width", _width, "height", _height);
     // console.log("b.offsetWidth", b.offsetWidth);
-
+    if(document.getElementById('homePageSketch4')){ _height = 250; }
     var renderer = p.createCanvas(_width, _height);
-    renderer.parent('scene');
+    renderer.parent(sketchId4);
 
     p.x = p.width/2;
     p.y = p.height/2;
@@ -63,7 +69,7 @@ const sketch = (p) => {
 
   p.windowResized = function() {
 
-    var b = document.getElementById('scene');
+    var b = document.getElementById(sketchId4);
 
     if (window.screen.height <= 550) {
       var _height = 250;
@@ -77,4 +83,4 @@ const sketch = (p) => {
   }
 }
 
-new p5(sketch, 'scene');
+new p5(sketch4, sketchId4);

@@ -16,27 +16,29 @@
                     </div>
                     <div class='product-section-box row' id="productSection">
                          {% for product in homeData.productData%}
-                         <div class='col-xl-4 col-lg-4 col-md-4 col-sm-6 text-center mb-10' >
-                              <div class='product-tile' >
-                                   <div class='tile-header'>
-                                        <h3>{{product.product_name}}</h3>
-                                   </div>
-                                   <div class='tile-sketch jumbotron'>
-                                        <h3>Product Sketch</h3>
-                                   </div>
-                                   <div class='tile-price-body'>
-                                        <div class='price-section'>
-                                             <span class='price'>${{product.product_price}}</span>
+                              {% if product.productStatus == 1 %}
+                                   <div class='col-xl-4 col-lg-4 col-md-4 col-sm-6 text-center mb-10' >
+                                        <div class='product-tile' >
+                                             <div class='tile-header'>
+                                                  <h3>{{product.product_name}}</h3>
+                                             </div>
+                                             <div class='tile-sketch' id="{{product.homePageSketchId}}" >
+
+                                             </div>
+                                             <div class='tile-price-body'>
+                                                  <div class='price-section'>
+                                                       <span class='price'>${{product.product_price}}</span>
+                                                  </div>
+                                                  <div class='buy-section'>
+                                                       <a href="/product/{{product.pageSlug}}" target='_blank' class='btn btn-primary btn-s'>More Info</a>
+                                                  </div>
+                                             </div>
+                                             <div class='tile-details'>
+                                                  <p class='productSortDescription'>{{product.product_sort_desc}}</p>
+                                             </div>
                                         </div>
-                                        <div class='buy-section'>
-                                             <a href="/product/{{product.pageSlug}}" target='_blank' class='btn btn-primary btn-s'>More Info</a>
-                                        </div>
                                    </div>
-                                   <div class='tile-details'>
-                                        <p class='productSortDescription'>{{product.product_sort_desc}}</p>
-                                   </div>
-                              </div>
-                         </div>
+                              {% endif %}
                          {%endfor%}
                     </div>
                </div>
