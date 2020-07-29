@@ -6,10 +6,10 @@ $(document).ready(function(){
 	});
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
-		if (scroll > 550 && scroll < 1310){
+		if (scroll > 1050 && scroll < 1810){
 			$('.headerLinks.active').removeClass('active');
 			$("#productLink").addClass('active')
-		}else if (scroll > 1310){
+		}else if (scroll > 1810){
 			$('.headerLinks.active').removeClass('active');
 			$("#benefitLink").addClass('active')
 		}else{

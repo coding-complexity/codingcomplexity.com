@@ -10,5 +10,6 @@ class Home:
         homePageData = {}
         homePageData['productData'] = self.config.productData()
         homePageData['productBenefits'] = self.config.productBenefits()
+        homePageData['testimonials'] = self.config.userTestimonials()
         # print(homePageData)
         return homePageData
