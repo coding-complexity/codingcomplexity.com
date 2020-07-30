@@ -13,3 +13,8 @@ class Config:
         benefitsYamlfile = '{}/benefits.yaml'.format(self.dataBasePath)
         benefitsData = yaml.load(open(benefitsYamlfile), Loader=yaml.FullLoader)
         return benefitsData
+
+    def userTestimonials(self):
+        testimonialFile = '{}/testimonial.yaml'.format(self.dataBasePath)
+        testimonialData = yaml.load(open(testimonialFile), Loader=yaml.FullLoader)
+        return testimonialData

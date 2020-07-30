@@ -1,0 +1,54 @@
+# Testimonial DATA
+- testimonial_id: 1
+  title: "ABCD"
+  user_name: "Jason Statham"
+  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  user_image: "JasonStatham.jpeg"
+  location: "NY, USA"
+  start_rating: 5
+  status: 1
+
+- testimonial_id: 2
+  title: "STUV"
+  user_name: "Vin Diesel"
+  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  user_image: "VinDiesel.jpeg"
+  location: "NY, USA"
+  start_rating: 5
+  status: 1
+
+- testimonial_id: 3
+  title: "EFGH"
+  user_name: "Bruce Willis"
+  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  user_image: "BruceWillis.jpg"
+  location: "NY, USA"
+  start_rating: 4
+  status: 1
+
+- testimonial_id: 4
+  title: "JKLM"
+  user_name: "Leonardo DiCaprio"
+  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  user_image: "LeonardoDiCaprio.jpg"
+  location: "NY, USA"
+  start_rating: 5
+  status: 1
+
+- testimonial_id: 5
+  title: "XYZA"
+  user_name: "Brad Pitt"
+  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  user_image: "BradPitt.jpeg"
+  location: "NY, USA"
+  start_rating: 5
+  status: 1
+
+- testimonial_id: 6
+  title: "PQRS"
+  user_name: "Tom Cruise"
+  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  user_image: "TomCruise.jpg"
+  location: "NY, USA"
+  start_rating: 3
+  status: 1
