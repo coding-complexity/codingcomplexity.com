@@ -23,8 +23,11 @@
 <!--Footer Section!-->
 <script src="{{ url_for('static',filename='assets/lib/js/jquery.min.js')}}"></script>
 <script src="{{ url_for('static',filename='assets/lib/js/bootstrap.min.js')}}"></script>
-<script src="{{ url_for('static',filename='assets/js/custom.js')}}"></script>
+{%- if request.path == "/about-us" %}
+	<script src="{{ url_for('static',filename='assets/js/aboutUsSketch.js')}}"></script>
+{%endif%}
 {%- if request.path == "/" %}
+	<script src="{{ url_for('static',filename='assets/js/custom.js')}}"></script>
 	<!-- <script src="{{ url_for('static',filename='assets/js/homepageSketch.js')}}"></script> -->
 	<script src="{{ url_for('static',filename='assets/js/homeSketch.js')}}"></script>
 	{% for product in homeData.productData%}

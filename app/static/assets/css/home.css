@@ -151,7 +151,9 @@ img.product-header-img { width: 100%; max-height: 420px; }
 .design a {
     color: #fff;
 }
-
+.hrLine{
+     border-top: 2px solid #333;
+}
 
 
 /* Carousel */
